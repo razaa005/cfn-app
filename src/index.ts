@@ -1,6 +1,4 @@
 import express, { Request, Response } from 'express';
-import fs from 'fs';
-import path from 'path';
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
 import handlebars from 'handlebars';
@@ -8,8 +6,12 @@ import { getCanSyndicate, getThumbnail } from './helpers/content-summaries-helpe
 import { TemplateHelper } from './helpers/template-helper';
 import { MtlsAgentHelper, MtlsAgentValidationError } from './helpers/mtls-agent-helper';
 import { FablClient } from './helpers/fabl-client';
-import { ArticleRequestValidator } from './helpers/article-request-validator';
+import { ArticleRequestValidator } from './validators/article-request-validator';
 import { AppConfigLoader, AppConfig } from './helpers/feed-config-loader';
+import { FeedValidatorFactory } from './helpers/feed-validator-factory';
+
+// Feed validator factory (singleton)
+const feedValidatorFactory = new FeedValidatorFactory();
 
 dotenv.config();
 
@@ -114,6 +116,7 @@ app.get('/articles', (req: Request, res: Response) => {
       // Select template config based on partner
       let templatePath = 'templates/topic-summaries-rss.hbs';
       let contentType = 'application/rss+xml';
+      let validatorName = 'rss2-validator';
       // log partner info if available
       console.log('[articles] articleRequest.partner:', articleRequest?.partner);
       if (articleRequest && articleRequest.partner && articleRequest.partner.syndication_options) {
@@ -123,18 +126,33 @@ app.get('/articles', (req: Request, res: Response) => {
         if (templateConfig) {
           templatePath = templateConfig.path;
           contentType = templateConfig.content_type;
+          validatorName = templateConfig.feed_validator;
         }
       }
       // Render using the selected template
       const templateHelper = new TemplateHelper(handlebars);
-      const xml = templateHelper.applyTemplate(
+      const feedString = templateHelper.applyTemplate(
         templatePath,
         topic,
         { data: { summaries: allSummaries } },
         articleRequest
       );
-      res.set('Content-Type', contentType);
-      return res.send(xml);
+
+      // Validate the feed using the appropriate validator
+      const validator = FeedValidatorFactory.getValidator(validatorName);
+      if (!validator) {
+        return res.status(500).json({ error: `No validator found for: ${validatorName}` });
+      }
+      const validationResult = validator.validate(feedString);
+      if (validationResult.valid) {
+        res.set('Content-Type', contentType);
+        return res.send(feedString);
+      } else {
+        return res.status(400).json({
+          error: 'Feed validation failed',
+          details: validationResult.errors
+        });
+      }
     } catch (err: any) {
       res.status(500).json({ error: err.message });
     }

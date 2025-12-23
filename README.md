@@ -4,7 +4,16 @@ This project is a Node.js + TypeScript Express API for hack week to experiment w
 
 ## Important!
 
+
 This project was created during hack week. It's not intended to be production ready code, it is a work in progress. There are MANY features of production ISAPI that are missing. The project is intended to explore some ideas we've had around more flexible templating of partner syndication feeds.
+
+## How It Works
+
+The `/articles` endpoint is the main entry point for generating feeds. When a request is made, the API validates the provided parameters (such as `feed`, `api_key`, `number_of_items`, and `mixins`). The `api_key` is matched against the partner configuration to determine which partner is making the request and which template should be used. Feed configuration, partner configuration, and template configuration are all loaded from JSON files in the `data/` directory.
+
+The combination of request parameters and these config files determines the structure and content of the feed. For example, the `feed` parameter selects which topic/curation to syndicate, while the `mixins` parameter controls which additional fields (like summaries or thumbnails) are included in each item. The partner's config specifies which Handlebars template to use for rendering, and the template config defines the template's file path and the response content type (RSS XML or JSON Feed).
+
+The API uses Handlebars templates to render the final feed output. The template receives the topic, the list of content summaries, the original article request, and other context. This allows for flexible, partner-specific formatting of the feed, supporting both RSS and JSON Feed output as defined in the template config.
 
 ## Prerequisites
 
@@ -95,6 +104,36 @@ npm test
 
 - `GET /articles` — Main feed endpoint (see [docs/isapi.html](docs/isapi.html) for parameters)
 - `POST /refresh-config` — Reloads config files from disk
+
+## Example Requests
+
+### RSS
+
+#### /news
+
+- [http://localhost:3000/articles?feed=news&api_key=partner_a_api_key&number_of_items=10](http://localhost:3000/articles?feed=news&api_key=partner_a_api_key&number_of_items=10) RSS feed for /news with 10 items, no mixins
+- [http://localhost:3000/articles?feed=news&api_key=partner_a_api_key&mixins=summary&number_of_items=10](http://localhost:3000/articles?feed=news&api_key=partner_a_api_key&mixins=summary&number_of_items=10) RSS feed for /news with 10 items, summary mixin
+- [http://localhost:3000/articles?feed=news&api_key=partner_a_api_key&mixins=summary,thumbnail_images&number_of_items=10](http://localhost:3000/articles?feed=news&api_key=partner_a_api_key&mixins=summary,thumbnail_images&number_of_items=10) RSS feed for /news with 10 items, summary and thumbnail mixins
+
+#### /sport/football
+
+- [http://localhost:3000/articles?feed=sport-football&api_key=partner_a_api_key&number_of_items=10](http://localhost:3000/articles?feed=sport-football&api_key=partner_a_api_key&number_of_items=10) RSS feed for /sport/football with 10 items, no mixins
+- [http://localhost:3000/articles?feed=sport-football&api_key=partner_a_api_key&mixins=summary&number_of_items=10](http://localhost:3000/articles?feed=sport-football&api_key=partner_a_api_key&mixins=summary&number_of_items=10) RSS feed for /sport/football with 10 items, summary mixin
+- [http://localhost:3000/articles?feed=sport-football&api_key=partner_a_api_key&mixins=summary,thumbnail_images&number_of_items=10](http://localhost:3000/articles?feed=sport-football&api_key=partner_a_api_key&mixins=summary,thumbnail_images&number_of_items=10) RSS feed for /sport/football with 10 items, summary and thumbnail mixins
+
+### JSON feed
+
+#### /news
+
+- [http://localhost:3000/articles?feed=news&api_key=partner_b_api_key&number_of_items=10](http://localhost:3000/articles?feed=news&api_key=partner_b_api_key&number_of_items=10) RSS feed for /news with 10 items, no mixins
+- [http://localhost:3000/articles?feed=news&api_key=partner_b_api_key&mixins=summary&number_of_items=10](http://localhost:3000/articles?feed=news&api_key=partner_b_api_key&mixins=summary&number_of_items=10) RSS feed for /news with 10 items, summary mixin
+- [http://localhost:3000/articles?feed=news&api_key=partner_b_api_key&mixins=summary,thumbnail_images&number_of_items=10](http://localhost:3000/articles?feed=news&api_key=partner_b_api_key&mixins=summary,thumbnail_images&number_of_items=10) RSS feed for /news with 10 items, summary and thumbnail mixins
+
+#### /football
+
+- [http://localhost:3000/articles?feed=sport-football&api_key=partner_b_api_key&number_of_items=10](http://localhost:3000/articles?feed=sport-football&api_key=partner_b_api_key&number_of_items=10) RSS feed for /sport/football with 10 items, no mixins
+- [http://localhost:3000/articles?feed=sport-football&api_key=partner_b_api_key&mixins=summary&number_of_items=10](http://localhost:3000/articles?feed=sport-football&api_key=partner_b_api_key&mixins=summary&number_of_items=10) RSS feed for /sport/football with 10 items, summary mixin
+- [http://localhost:3000/articles?feed=sport-football&api_key=partner_b_api_key&mixins=summary,thumbnail_images&number_of_items=10](http://localhost:3000/articles?feed=sport-football&api_key=partner_b_api_key&mixins=summary,thumbnail_images&number_of_items=10) RSS feed for /sport/football with 10 items, summary and thumbnail mixins
 
 ## Troubleshooting
 

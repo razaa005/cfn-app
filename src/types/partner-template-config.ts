@@ -19,6 +19,7 @@ export interface TemplateConfigEntry {
   id: string;
   path: string;
   content_type: string;
+  feed_validator: string;
 }
 
 export interface TemplateConfig {

@@ -1,9 +1,15 @@
 {
-  "version": "https://jsonfeed.org/version/1",
+  "version": "https://jsonfeed.org/version/1.1",
   "title": "{{topic.data.title}}",
   "home_page_url": "https://www.bbc.com{{topic.data.uri}}",
   "feed_url": "",
   "description": "{{topic.data.seoDescription}}",
+  "icon": "",
+  "favicon": "",
+  "language": "{{topic.data.language}}",
+  "authors": [],
+  "expired": false,
+  "hubs": [],
   "items": [
     {{#each contentSummaries.data.summaries}}
       {{#if canSyndicate}}
