@@ -1,0 +1,33 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>{{topic.data.title}}</title>
+    <description>{{topic.data.seoDescription}}</description>
+    <link>https://www.bbc.com{{topic.data.uri}}</link>
+    <language>{{topic.data.language}}</language>
+    <pubDate>{{now}}</pubDate>
+    {{#each contentSummaries.data.summaries}}
+      {{#if canSyndicate}}
+      <item>
+        <title>{{title}}</title>
+        <link>{{link.url}}</link>
+        <guid>{{link.url}}</guid>
+        {{#if ../articleRequest.mixins.summary}}
+        <description>
+          {{#if descriptions.[0]}}
+            {{{descriptions.[0].text}}}
+          {{else}}
+            {{title}}
+          {{/if}}
+        </description>
+        {{/if}}
+        {{#if ../articleRequest.mixins.thumbnail_images}}
+        {{#if thumbnail}}
+          <media:thumbnail url="{{thumbnail.url}}" width="{{thumbnail.width}}" height="{{thumbnail.height}}" />
+        {{/if}}
+        {{/if}}
+        <pubDate>{{dates.firstPublished}}</pubDate>
+      </item>
+      {{/if}}
+    {{/each}}
+  </channel>
+</rss>

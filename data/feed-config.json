@@ -1,0 +1,25 @@
+{
+    "feeds":{
+        "news": {
+            "topicId": "c78qj0lyz2gt"
+        },
+        "news-england": {
+            "topicId": "ck71r1x591xt"
+        },
+        "sport": {
+            "topicId": "c22ymglr3x3t"
+        },
+        "sport-football": {
+            "topicId": "cv1vdqq8869t"
+        },
+        "climate": {
+            "topicId": "cmj34zmwm1zt"
+        },
+        "israel-gaza": {
+            "topicId": "c2vdnvdg6xxt"
+        },
+        "ukraine-war": {
+            "topicId": "c1vw6q14rzqt"
+        }
+    }
+}

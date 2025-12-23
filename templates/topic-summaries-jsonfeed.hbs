@@ -1,0 +1,25 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{topic.data.title}}",
+  "home_page_url": "https://www.bbc.com{{topic.data.uri}}",
+  "feed_url": "",
+  "description": "{{topic.data.seoDescription}}",
+  "items": [
+    {{#each contentSummaries.data.summaries}}
+      {{#if canSyndicate}}
+      {
+        "id": "{{urn}}",
+        "url": "{{link.url}}",
+        "title": "{{title}}",
+        {{#if ../articleRequest.mixins.summary}}
+        "content_text": {{#if descriptions.[0]}}"{{descriptions.[0].text}}"{{else}}"{{title}}"{{/if}},
+        {{/if}}
+        {{#if ../articleRequest.mixins.thumbnail_images}}
+        "image": {{#if thumbnail}}"{{thumbnail.url}}"{{else}}null{{/if}},
+        {{/if}}
+        "date_published": "{{dates.firstPublished}}"
+      }{{#unless @last}},{{/unless}}
+      {{/if}}
+    {{/each}}
+  ]
+}

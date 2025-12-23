@@ -1,0 +1,14 @@
+{
+    "templates": [
+        {
+            "id": "topic-summaries-rss",
+            "path": "templates/topic-summaries-rss.hbs",
+            "content_type": "application/rss+xml"
+        },
+        {
+            "id": "topic-summaries-jsonfeed",
+            "path": "templates/topic-summaries-jsonfeed.hbs",
+            "content_type": "application/json"
+        }
+    ]
+}

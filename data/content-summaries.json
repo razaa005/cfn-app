@@ -1,0 +1,2547 @@
+{
+    "data": {
+        "summaries": [
+            {
+                "urn": "urn:bbc:optimo:asset:c058286e69lo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "Former Rockstar Games worker says he was sacked for trying to unionise",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Former Rockstar Games worker says he was sacked for trying to unionise",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/c058286e69lo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/c058286e69lo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-19T13:12:21.872Z",
+                    "lastPublished": "2025-12-19T13:12:21.872Z",
+                    "curated": "2025-12-19T13:12:21.872Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Former Rockstar Games employee who alleges he was sacked for trying to unionise says some workers' passion for the job means they may accept worse treatment.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5b22/live/38a61320-dcd8-11f0-a8dc-93c15fe68710.jpg",
+                        "altText": "Banner from protestors outside Rockstar Games' offices reading 'Grand Theft Employment!' It's in black writing on a red background being held by what appears to be a woman's hand",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/5b22/live/38a61320-dcd8-11f0-a8dc-93c15fe68710.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "PA Media",
+                        "originalUrl": "https://c.files.bbci.co.uk/5b22/live/38a61320-dcd8-11f0-a8dc-93c15fe68710.jpg",
+                        "originalSize": {
+                            "width": 999,
+                            "height": 562
+                        },
+                        "locator": "5b22/live/38a61320-dcd8-11f0-a8dc-93c15fe68710.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Technology",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/technology",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/technology"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT1M",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": false
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 17
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cp8zpln24mno",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "Fifa video game to return on Netflix in 2026",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Fifa video game to return on Netflix in 2026",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/cp8zpln24mno",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/cp8zpln24mno"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-18T17:24:19.751Z",
+                    "lastPublished": "2025-12-18T17:24:19.751Z",
+                    "curated": "2025-12-18T17:24:19.751Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "With Fifa returning to the video game market with a new title released on Netflix, fans will be able to play on their phones and stream on selected televisions.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5085/live/d40df950-dc2d-11f0-b67b-690eb873de1b.jpg",
+                        "altText": "A person playing a football simulation video game on a large TV. The person has their back to the camera and the word Tess on the back of their shirt",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/5085/live/d40df950-dc2d-11f0-b67b-690eb873de1b.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            },
+                            {
+                                "width": 960,
+                                "height": 539
+                            }
+                        ],
+                        "copyright": "Getty Images",
+                        "originalUrl": "https://c.files.bbci.co.uk/5085/live/d40df950-dc2d-11f0-b67b-690eb873de1b.jpg",
+                        "originalSize": {
+                            "width": 1024,
+                            "height": 575
+                        },
+                        "locator": "5085/live/d40df950-dc2d-11f0-b67b-690eb873de1b.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "News",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT38S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": false
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 14
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:crk7pm417dyo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "'Wow!' KT Tunstall watches her avatar perform",
+                        "type": "primary"
+                    }
+                ],
+                "title": "'Wow!' KT Tunstall watches her avatar perform",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/crk7pm417dyo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/crk7pm417dyo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-18T16:12:58.705Z",
+                    "lastPublished": "2025-12-18T16:12:58.705Z",
+                    "curated": "2025-12-18T16:12:58.705Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Jacqui Wakefield joins singer KT Tunstall as she sees her musical avatar perform.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/c97d/live/26d71760-dc20-11f0-a8dc-93c15fe68710.jpg",
+                        "altText": "Split screen of KT Tunstall and her avatar",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/c97d/live/26d71760-dc20-11f0-a8dc-93c15fe68710.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/c97d/live/26d71760-dc20-11f0-a8dc-93c15fe68710.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "c97d/live/26d71760-dc20-11f0-a8dc-93c15fe68710.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "News",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT1M6S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": false
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 15
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cn4dve8r3y0o",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "Fallout creator says TV show WILL impact new game",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Fallout creator says TV show WILL impact new game",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/cn4dve8r3y0o",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/cn4dve8r3y0o"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-18T12:04:45.212Z",
+                    "lastPublished": "2025-12-18T12:04:45.212Z",
+                    "curated": "2025-12-18T12:04:45.212Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Fallout 5 is officially coming but it won't be any time soon.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/5e64/live/30fbf380-dc09-11f0-a8dc-93c15fe68710.jpg",
+                        "altText": "A man in a dark top with a cream jacket sits down",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/5e64/live/30fbf380-dc09-11f0-a8dc-93c15fe68710.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/5e64/live/30fbf380-dc09-11f0-a8dc-93c15fe68710.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "5e64/live/30fbf380-dc09-11f0-a8dc-93c15fe68710.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "News",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT21S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": false
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 14
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c93w7dp42z2o",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Fifa video game to return after four years in Netflix exclusive",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Fifa video game to return after four years in Netflix exclusive",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c93w7dp42z2o",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c93w7dp42z2o"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-17T18:20:44.981Z",
+                    "lastPublished": "2025-12-17T18:20:44.981Z",
+                    "curated": "2025-12-17T18:20:44.981Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The game will be made by Delphi Interactive and released in time for the 2026  World Cup.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/931c/live/11f12bc0-db75-11f0-b5d0-e9a8f87cff6a.jpg",
+                        "altText": "Back of the head of a man wearing glasses sitting down playing a video game on a mobile phone",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/931c/live/11f12bc0-db75-11f0-b5d0-e9a8f87cff6a.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            },
+                            {
+                                "width": 960,
+                                "height": 539
+                            }
+                        ],
+                        "copyright": "Getty Images",
+                        "originalUrl": "https://c.files.bbci.co.uk/931c/live/11f12bc0-db75-11f0-b5d0-e9a8f87cff6a.jpg",
+                        "originalSize": {
+                            "width": 1908,
+                            "height": 1073
+                        },
+                        "locator": "931c/live/11f12bc0-db75-11f0-b5d0-e9a8f87cff6a.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Technology",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/technology",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/technology"
+                        }
+                    }
+                ],
+                "commentsCount": 55,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Laura Cress",
+                        "title": "Technology reporter"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 3,
+                    "wordCount": 619
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cvgr488vlmmo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Fallout and the secret of the perfect video game adaptation",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Fallout and the secret of the perfect video game adaptation",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/cvgr488vlmmo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/cvgr488vlmmo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-17T11:30:36.268Z",
+                    "lastPublished": "2025-12-17T11:30:36.268Z",
+                    "curated": "2025-12-17T11:30:36.268Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Masterminds behind the classic video game series tell us how they created a successful TV show. ",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/42cd/live/613f0a00-da9c-11f0-b825-331725716d67.jpg",
+                        "altText": "A shot from Fallout shows Ella Purnell in her blue vault suit, hair tied back, looking quizzically at something in the distance. She's surrounded by desert and bathed in a dusky yellow sunlight. ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/42cd/live/613f0a00-da9c-11f0-b825-331725716d67.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "caption": "Ella Purnell returns as Lucy in season two of Fallout",
+                        "copyright": "Prime Video",
+                        "originalUrl": "https://c.files.bbci.co.uk/42cd/live/613f0a00-da9c-11f0-b825-331725716d67.jpg",
+                        "originalSize": {
+                            "width": 1863,
+                            "height": 1048
+                        },
+                        "locator": "42cd/live/613f0a00-da9c-11f0-b825-331725716d67.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Newsbeat",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/newsbeat",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/newsbeat"
+                        }
+                    }
+                ],
+                "commentsCount": 151,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Peter Gillibrand",
+                        "title": "BBC Newsbeat"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 6,
+                    "wordCount": 1496
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cp89990rgdno",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Grand Theft Auto game creator sacked us for trying to unionise",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Grand Theft Auto game creator sacked us for trying to unionise",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/cp89990rgdno",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/cp89990rgdno"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-15T06:26:48.114Z",
+                    "lastPublished": "2025-12-15T10:21:43.136Z",
+                    "curated": "2025-12-15T10:21:43.136Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Former staff at the Grand Theft Auto creator are seeking an employment tribunal over alleged \"union-busting\".",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/34f6/live/bfc01070-d77b-11f0-aae2-2191c0e48a3b.jpg",
+                        "altText": "A woman and a man hold signs which read \"union busted?\" and \"unions protect workers\"",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/34f6/live/bfc01070-d77b-11f0-aae2-2191c0e48a3b.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/34f6/live/bfc01070-d77b-11f0-aae2-2191c0e48a3b.jpg",
+                        "originalSize": {
+                            "width": 1495,
+                            "height": 841
+                        },
+                        "locator": "34f6/live/bfc01070-d77b-11f0-aae2-2191c0e48a3b.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Edinburgh, Fife & East",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/scotland/edinburgh_east_and_fife",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/scotland/edinburgh_east_and_fife"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Hope Webb",
+                        "title": "BBC Scotland reporter"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 5,
+                    "wordCount": 1199
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c2epm9z9kkvo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "This Grand Theft Auto creator is back - with a novel about an AI that hijacks your mind",
+                        "type": "primary"
+                    }
+                ],
+                "title": "This Grand Theft Auto creator is back - with a novel about an AI that hijacks your mind",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c2epm9z9kkvo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c2epm9z9kkvo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-14T00:58:34.886Z",
+                    "lastPublished": "2025-12-14T00:58:34.886Z",
+                    "curated": "2025-12-14T00:58:34.886Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "A Better Paradise is a dystopian vision of the near future in which an AI-led computer game goes rogue.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/6cf0/live/e4840b20-d75b-11f0-9fb5-5f3a3703a365.jpg",
+                        "altText": "Jason and Lucia artwork - GTA IV",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/6cf0/live/e4840b20-d75b-11f0-9fb5-5f3a3703a365.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "Rockstar Games",
+                        "originalUrl": "https://c.files.bbci.co.uk/6cf0/live/e4840b20-d75b-11f0-9fb5-5f3a3703a365.jpg",
+                        "originalSize": {
+                            "width": 3840,
+                            "height": 2160
+                        },
+                        "locator": "6cf0/live/e4840b20-d75b-11f0-9fb5-5f3a3703a365.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Technology",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/technology",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/technology"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Alex Taylor",
+                        "title": "Culture reporter"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 6,
+                    "wordCount": 1370
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c80x1lk8kvjo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "I'll never forget my roots, says Angry Ginge",
+                        "type": "primary"
+                    }
+                ],
+                "title": "I'll never forget my roots, says Angry Ginge",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c80x1lk8kvjo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c80x1lk8kvjo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-13T18:54:06.424Z",
+                    "lastPublished": "2025-12-13T20:38:27.338Z",
+                    "curated": "2025-12-13T20:38:27.338Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The content creator is back coaching at his football club after being crowned King of the Jungle.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/56c1/live/828d0fd0-d863-11f0-aae2-2191c0e48a3b.png",
+                        "altText": "Angry Ginge wears a beanie woolly hat covering his ginger hair. He is smiling and wearing warm clothing. People are behind him at the football club, also wrapped up warm.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/56c1/live/828d0fd0-d863-11f0-aae2-2191c0e48a3b.png",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/56c1/live/828d0fd0-d863-11f0-aae2-2191c0e48a3b.png",
+                        "originalSize": {
+                            "width": 865,
+                            "height": 486
+                        },
+                        "locator": "56c1/live/828d0fd0-d863-11f0-aae2-2191c0e48a3b.png",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Manchester",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/england/manchester",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/england/manchester"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Angela Ferguson",
+                        "title": "North West"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 4,
+                    "wordCount": 809
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c3r77j5nze5o",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Amazon pulls AI recap from Fallout TV show after it made several mistakes",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Amazon pulls AI recap from Fallout TV show after it made several mistakes",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c3r77j5nze5o",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c3r77j5nze5o"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-12T18:04:47.756Z",
+                    "lastPublished": "2025-12-12T18:04:47.756Z",
+                    "curated": "2025-12-12T18:04:47.756Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The errors included getting dialogue wrong and incorrectly claiming a scene was set 100 years earlier than it was.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/05b5/live/8a737610-d77a-11f0-825e-eb4c8fb7e95e.jpg",
+                        "altText": "A woman with long black hair stands in the middle of a steampunk-like room. There are pipes and girders visible with yellow and grey colours. The woman has wide eyes and is wearing a deep blue jumpsuit.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/05b5/live/8a737610-d77a-11f0-825e-eb4c8fb7e95e.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            }
+                        ],
+                        "caption": "Ella Purnell stars as Lucy in Amazon's hit show based on the Fallout video game series",
+                        "copyright": "Amazon",
+                        "originalUrl": "https://c.files.bbci.co.uk/05b5/live/8a737610-d77a-11f0-825e-eb4c8fb7e95e.jpg",
+                        "originalSize": {
+                            "width": 892,
+                            "height": 501
+                        },
+                        "locator": "05b5/live/8a737610-d77a-11f0-825e-eb4c8fb7e95e.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Technology",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/technology",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/technology"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Liv McMahon",
+                        "title": "Technology reporter"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 3,
+                    "wordCount": 724
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cz0nnxk4z3yo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "The big winners at this year's Game Awards",
+                        "type": "primary"
+                    }
+                ],
+                "title": "The big winners at this year's Game Awards",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/cz0nnxk4z3yo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/cz0nnxk4z3yo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-12T16:01:33.425Z",
+                    "lastPublished": "2025-12-12T16:01:33.425Z",
+                    "curated": "2025-12-12T16:01:33.425Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Mel Ramsay rounds up what happened, with Clair Obscur: Expedition 33 stealing the show.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/f706/live/6d1a69a0-d76d-11f0-b67b-690eb873de1b.jpg",
+                        "altText": "Image of computer animated bearded man in medieval attire",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/f706/live/6d1a69a0-d76d-11f0-b67b-690eb873de1b.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "Sandfall Interactive",
+                        "originalUrl": "https://c.files.bbci.co.uk/f706/live/6d1a69a0-d76d-11f0-b67b-690eb873de1b.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "f706/live/6d1a69a0-d76d-11f0-b67b-690eb873de1b.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "News",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT37S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": false
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 13
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cj9yyvkx4wwo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "Clair Obscur sweeps The Game Awards with nine wins",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Clair Obscur sweeps The Game Awards with nine wins",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/cj9yyvkx4wwo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/cj9yyvkx4wwo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-12T10:57:03.812Z",
+                    "lastPublished": "2025-12-12T10:57:03.812Z",
+                    "curated": "2025-12-12T10:57:03.812Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "\nClair Obscur: Expedition 33 has been named game of the year at this year's Game Awards.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/938c/live/68f1d6f0-d75f-11f0-8c06-f5d460985095.jpg",
+                        "altText": "Screenshot of four characters from Clair Obscur: Expedition 33 ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/938c/live/68f1d6f0-d75f-11f0-8c06-f5d460985095.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            },
+                            {
+                                "width": 960,
+                                "height": 539
+                            }
+                        ],
+                        "copyright": "Sandfall Interactive",
+                        "originalUrl": "https://c.files.bbci.co.uk/938c/live/68f1d6f0-d75f-11f0-8c06-f5d460985095.jpg",
+                        "originalSize": {
+                            "width": 1388,
+                            "height": 780
+                        },
+                        "locator": "938c/live/68f1d6f0-d75f-11f0-8c06-f5d460985095.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Technology",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/technology",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/technology"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT49S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 125
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c1kpwmezkpdo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Clair Obscur sweeps The Game Awards with nine wins",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Clair Obscur sweeps The Game Awards with nine wins",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c1kpwmezkpdo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c1kpwmezkpdo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-12T06:59:59.792Z",
+                    "lastPublished": "2025-12-12T10:45:37.477Z",
+                    "curated": "2025-12-12T10:45:37.477Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The French-made role-playing game is named game of the year on a night of prizes and announcements.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/1ad4/live/e9a97860-d73d-11f0-8c06-f5d460985095.jpg",
+                        "altText": "Guillaume Broche, wearing a red beret, striped t-shirt plus red and white checked sash around his shoulder. He's standing behind two microphones, delivering a speech to the audience.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/1ad4/live/e9a97860-d73d-11f0-8c06-f5d460985095.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "caption": "Clair Obscur: Expedition 33's director Guillaume Broche accepted the game of the year prize",
+                        "copyright": "AFP via Getty Images",
+                        "originalUrl": "https://c.files.bbci.co.uk/1ad4/live/e9a97860-d73d-11f0-8c06-f5d460985095.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "1ad4/live/e9a97860-d73d-11f0-8c06-f5d460985095.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Newsbeat",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/newsbeat",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/newsbeat"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Tom Richardson",
+                        "title": "BBC Newsbeat"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 7,
+                    "wordCount": 1569
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cz94j09y1geo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "We're all Team Ginge - Jungle King's hometown on 'icon'",
+                        "type": "primary"
+                    }
+                ],
+                "title": "We're all Team Ginge - Jungle King's hometown on 'icon'",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/cz94j09y1geo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/cz94j09y1geo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-09T16:30:00.027Z",
+                    "lastPublished": "2025-12-09T16:30:00.027Z",
+                    "curated": "2025-12-09T16:30:00.027Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Staff at the football club where content creator Angry Ginge coaches say he has put Eccles \"on the map\". ",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/1784/live/2a647120-d4ff-11f0-949c-45d05c88eada.png",
+                        "altText": "Angry Ginge in a promotional picture for I'm a Celebrity. He wears a red gilet, camo bandana and is smiling.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/1784/live/2a647120-d4ff-11f0-949c-45d05c88eada.png",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            }
+                        ],
+                        "caption": "Angry Ginge won Series 25 of I'm a Celebrity... Get Me Out of Here!",
+                        "copyright": "ITV",
+                        "originalUrl": "https://c.files.bbci.co.uk/1784/live/2a647120-d4ff-11f0-949c-45d05c88eada.png",
+                        "originalSize": {
+                            "width": 582,
+                            "height": 328
+                        },
+                        "locator": "1784/live/2a647120-d4ff-11f0-949c-45d05c88eada.png",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Manchester",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/england/manchester",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/england/manchester"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Richard Baker",
+                        "title": "North West"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 4,
+                    "wordCount": 798
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c773dmy876zo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "It sparked a debate over AI, but can Arc Raiders win a Bafta game award?",
+                        "type": "primary"
+                    }
+                ],
+                "title": "It sparked a debate over AI, but can Arc Raiders win a Bafta game award?",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c773dmy876zo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c773dmy876zo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-09T16:09:14.169Z",
+                    "lastPublished": "2025-12-09T16:09:14.169Z",
+                    "curated": "2025-12-09T16:09:14.169Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Smash-hit Arc Raiders is longlisted for Bafta's best game award alongside Clair Obscur and Silksong.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/3926/live/b5d6bbe0-d50f-11f0-8c06-f5d460985095.png",
+                        "altText": "Screenshot from Arc Raiders shows a character holding a large rifle and with a hammer-like tool strapped to her back giving a determined look towards the camera.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/3926/live/b5d6bbe0-d50f-11f0-8c06-f5d460985095.png",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "caption": "Arc Raiders has been a smash hit, but its use of AI has sparked debate",
+                        "copyright": "Embark Studios",
+                        "originalUrl": "https://c.files.bbci.co.uk/3926/live/b5d6bbe0-d50f-11f0-8c06-f5d460985095.png",
+                        "originalSize": {
+                            "width": 976,
+                            "height": 549
+                        },
+                        "locator": "3926/live/b5d6bbe0-d50f-11f0-8c06-f5d460985095.png",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Newsbeat",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/newsbeat",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/newsbeat"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Tom Richardson",
+                        "title": "BBC Newsbeat"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 5,
+                    "wordCount": 1053
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:ckgl8nj8nvzo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Why do Gen Z have a growing appetite for retro tech?",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Why do Gen Z have a growing appetite for retro tech?",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/ckgl8nj8nvzo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/ckgl8nj8nvzo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-07T00:24:09.597Z",
+                    "lastPublished": "2025-12-07T00:24:09.597Z",
+                    "curated": "2025-12-07T00:24:09.597Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Gen Z are going retro, with studies showing a resurgence in people buying tech in the modern age that can be dated back decades. ",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/e332/live/f751f750-d123-11f0-9d18-614b3678ebf8.jpg",
+                        "altText": "Kyle is indoors holding up a white PlayStation Portable (PSP) console with a keychain attached.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/e332/live/f751f750-d123-11f0-9d18-614b3678ebf8.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "caption": "Kyle, 21 got a PSP to relive his childhood",
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/e332/live/f751f750-d123-11f0-9d18-614b3678ebf8.jpg",
+                        "originalSize": {
+                            "width": 1024,
+                            "height": 576
+                        },
+                        "locator": "e332/live/f751f750-d123-11f0-9d18-614b3678ebf8.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Scotland",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/scotland",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/scotland"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 4,
+                    "wordCount": 998
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c17xde0d0nxo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "11-year-old boy breaks video game world record",
+                        "type": "primary"
+                    }
+                ],
+                "title": "11-year-old boy breaks video game world record",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/c17xde0d0nxo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/c17xde0d0nxo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-06T10:39:47.770Z",
+                    "lastPublished": "2025-12-06T10:39:47.770Z",
+                    "curated": "2025-12-06T10:39:47.770Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Max, from Penarth, spent four hours developing a platformer game with five unique levels.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/fbaf/live/37a77cd0-cada-11f0-9fb5-5f3a3703a365.jpg",
+                        "altText": "A smiling boy in school uniform and glasses, holding a frame with a Guinness World Records certificate ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/fbaf/live/37a77cd0-cada-11f0-9fb5-5f3a3703a365.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/fbaf/live/37a77cd0-cada-11f0-9fb5-5f3a3703a365.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "fbaf/live/37a77cd0-cada-11f0-9fb5-5f3a3703a365.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Wales",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/wales",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/wales"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT56S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": false
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 12
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c2dz0jjy3yeo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "video",
+                "titles": [
+                    {
+                        "title": "'A dream can become real,' says world record holder, 11",
+                        "type": "primary"
+                    }
+                ],
+                "title": "'A dream can become real,' says world record holder, 11",
+                "link": {
+                    "url": "https://www.bbc.com/news/videos/c2dz0jjy3yeo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/videos/c2dz0jjy3yeo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-06T10:33:10.128Z",
+                    "lastPublished": "2025-12-06T10:33:10.128Z",
+                    "curated": "2025-12-06T10:33:10.128Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Max has become the youngest male video game developer after his four-hour attempt in May.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/2938/live/c164cdc0-d1ff-11f0-9fb5-5f3a3703a365.jpg",
+                        "altText": "Max holding his certificate ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/2938/live/c164cdc0-d1ff-11f0-9fb5-5f3a3703a365.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/2938/live/c164cdc0-d1ff-11f0-9fb5-5f3a3703a365.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "2938/live/c164cdc0-d1ff-11f0-9fb5-5f3a3703a365.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Wales",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/wales",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/wales"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "duration": "PT56S",
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": true,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 1,
+                    "wordCount": 203
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c17p4prj8qgo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Boy, 11, becomes video game world record holder",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Boy, 11, becomes video game world record holder",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c17p4prj8qgo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c17p4prj8qgo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-06T10:20:40.322Z",
+                    "lastPublished": "2025-12-06T10:20:40.322Z",
+                    "curated": "2025-12-06T10:20:40.322Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Max is recognised after spending four hours creating a video game under strict supervision.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/61a1/live/ec2b1450-d115-11f0-9fb5-5f3a3703a365.jpg",
+                        "altText": "Max holding his certificate ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/61a1/live/ec2b1450-d115-11f0-9fb5-5f3a3703a365.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/61a1/live/ec2b1450-d115-11f0-9fb5-5f3a3703a365.jpg",
+                        "originalSize": {
+                            "width": 1920,
+                            "height": 1080
+                        },
+                        "locator": "61a1/live/ec2b1450-d115-11f0-9fb5-5f3a3703a365.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Wales",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/wales",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/wales"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Oscar Edwards",
+                        "title": "BBC Wales"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 5,
+                    "wordCount": 1034
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c3v1dd01x65o",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Twitch star QTCinderella says she wishes she never started streaming",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Twitch star QTCinderella says she wishes she never started streaming",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c3v1dd01x65o",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c3v1dd01x65o"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-05T22:32:29.871Z",
+                    "lastPublished": "2025-12-05T22:32:29.871Z",
+                    "curated": "2025-12-05T22:32:29.871Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The Streamer Awards organiser said the negatives of her online role made it hard to enjoy the job.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/61bd/live/58caa050-d1dc-11f0-9267-ab26a8fe8cc2.jpg",
+                        "altText": "A woman, QTCinderella, is sitting wearing black over-ear headphones and black glasses, with a brown, open hoodie. She is speaking into a black microphone. In the background is a lamp and a vase of flowers and a window with pink curtains. ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/61bd/live/58caa050-d1dc-11f0-9267-ab26a8fe8cc2.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/61bd/live/58caa050-d1dc-11f0-9267-ab26a8fe8cc2.jpg",
+                        "originalSize": {
+                            "width": 1493,
+                            "height": 840
+                        },
+                        "locator": "61bd/live/58caa050-d1dc-11f0-9267-ab26a8fe8cc2.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Technology",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/technology",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/technology"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Laura Cress",
+                        "title": "Technology reporter"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 4,
+                    "wordCount": 812
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:c79xe1gn282o",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Fallout stars say post-apocalyptic worlds captivate people",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Fallout stars say post-apocalyptic worlds captivate people",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/c79xe1gn282o",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/c79xe1gn282o"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-03T12:53:12.066Z",
+                    "lastPublished": "2025-12-03T12:53:12.066Z",
+                    "curated": "2025-12-03T12:53:12.066Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The hit TV show is an adaptation of the popular role-playing gaming of the same name.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/2d65/live/e86dd230-d039-11f0-85ee-1313d6fdfda6.png",
+                        "altText": "Justin Theroux is standing in front of an orange background, with the words Fallout and Prime on it. He is wearing a black jacket with a white shirt, and he has black, spiky hair. ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/2d65/live/e86dd230-d039-11f0-85ee-1313d6fdfda6.png",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            }
+                        ],
+                        "caption": "Justin Theroux says people relate to Fallout's characters \"because they're the ones that got left behind\"",
+                        "copyright": "Getty Images",
+                        "originalUrl": "https://c.files.bbci.co.uk/2d65/live/e86dd230-d039-11f0-85ee-1313d6fdfda6.png",
+                        "originalSize": {
+                            "width": 851,
+                            "height": 478
+                        },
+                        "locator": "2d65/live/e86dd230-d039-11f0-85ee-1313d6fdfda6.png",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Newsbeat",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/newsbeat",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/newsbeat"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": true,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Peter Gillibrand and Jared Evitts",
+                        "title": "BBC Newsbeat"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 5,
+                    "wordCount": 962
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cj6xw9w976jo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "'It's the golden age of spreadsheet geekery'",
+                        "type": "primary"
+                    }
+                ],
+                "title": "'It's the golden age of spreadsheet geekery'",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/cj6xw9w976jo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/cj6xw9w976jo"
+                },
+                "dates": {
+                    "firstPublished": "2025-12-01T06:15:16.702Z",
+                    "lastPublished": "2025-12-01T06:15:16.702Z",
+                    "curated": "2025-12-01T06:15:16.702Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "Two co-founders behind the competitive Excel UK chapter explain how the game works.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/21f2/live/91b66210-c9e8-11f0-993d-ed000479df42.png",
+                        "altText": "A winner at the Microsoft Excel World Championships (MEWC) in Las Vegas, holding up a wrestling style belt. He is wearing a cream and green jacket and is smiling. He has a light brown/ginger beard and hair. The faces of two people behind can be seen, they are smiling. There are green screens behind advertising brands. ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/21f2/live/91b66210-c9e8-11f0-993d-ed000479df42.png",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 134
+                            },
+                            {
+                                "width": 320,
+                                "height": 179
+                            },
+                            {
+                                "width": 480,
+                                "height": 269
+                            },
+                            {
+                                "width": 624,
+                                "height": 350
+                            },
+                            {
+                                "width": 800,
+                                "height": 449
+                            },
+                            {
+                                "width": 960,
+                                "height": 539
+                            }
+                        ],
+                        "caption": "Contenders at the Microsoft Excel World Championships compete for a wrestling-style belt",
+                        "copyright": "MEWC",
+                        "originalUrl": "https://c.files.bbci.co.uk/21f2/live/91b66210-c9e8-11f0-993d-ed000479df42.png",
+                        "originalSize": {
+                            "width": 1393,
+                            "height": 783
+                        },
+                        "locator": "21f2/live/91b66210-c9e8-11f0-993d-ed000479df42.png",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Bristol",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/england/bristol",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/england/bristol"
+                        }
+                    }
+                ],
+                "commentsCount": 132,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Jasmine Ketibuah-Foley",
+                        "title": "West of England"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 6,
+                    "wordCount": 1272
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cm2w79447vvo",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "It's time to lock in and let your winter arc begin",
+                        "type": "primary"
+                    }
+                ],
+                "title": "It's time to lock in and let your winter arc begin",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/cm2w79447vvo",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/cm2w79447vvo"
+                },
+                "dates": {
+                    "firstPublished": "2025-11-30T00:03:07.024Z",
+                    "lastPublished": "2025-11-30T00:03:07.024Z",
+                    "curated": "2025-11-30T00:03:07.024Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "It helps you ignore distractions and achieve your goals - but how do you avoid burning out?",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/6544/live/07aa7660-cc4f-11f0-a892-01d657345866.jpg",
+                        "altText": "Person seated at a wooden desk typing on a silver laptop, with a black recyclable takeaway coffee cup and a smartphone with a clear case placed either side of her. A desk lamp illuminates the workspace. In the background, shelves filled with red, green, and blue books line the wall.",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/6544/live/07aa7660-cc4f-11f0-a892-01d657345866.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "copyright": "BBC",
+                        "originalUrl": "https://c.files.bbci.co.uk/6544/live/07aa7660-cc4f-11f0-a892-01d657345866.jpg",
+                        "originalSize": {
+                            "width": 4032,
+                            "height": 2268
+                        },
+                        "locator": "6544/live/07aa7660-cc4f-11f0-a892-01d657345866.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "UK",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/uk",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/uk"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 6,
+                    "wordCount": 1302
+                }
+            },
+            {
+                "urn": "urn:bbc:optimo:asset:cq8d25x1214o",
+                "home": "http://www.bbc.co.uk/ontologies/passport/home/News",
+                "type": "article",
+                "titles": [
+                    {
+                        "title": "Make the art you want to see, says Bafta Breakthrough actor ",
+                        "type": "primary"
+                    }
+                ],
+                "title": "Make the art you want to see, says Bafta Breakthrough actor ",
+                "link": {
+                    "url": "https://www.bbc.com/news/articles/cq8d25x1214o",
+                    "scheme": "https",
+                    "host": "www.bbc.com",
+                    "path": "/news/articles/cq8d25x1214o"
+                },
+                "dates": {
+                    "firstPublished": "2025-11-25T12:24:57.953Z",
+                    "lastPublished": "2025-11-25T12:24:57.953Z",
+                    "curated": "2025-11-25T12:24:57.953Z",
+                    "liveFrom": null,
+                    "liveUntil": null
+                },
+                "subtitle": null,
+                "descriptions": [
+                    {
+                        "text": "The What it Feels Like For a Girl star says his career changed when he posted Instagram videos.",
+                        "source": "summary"
+                    }
+                ],
+                "images": [
+                    {
+                        "url": "https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/20fb/live/6ac85220-c95d-11f0-b163-d7d455ce68d3.jpg",
+                        "altText": "Ellis Howard wears a black zip-up jacket. He has short brown hair and is staring in to the camera. ",
+                        "urlTemplate": "https://ichef.bbci.co.uk/ace/standard/{width}/cpsprodpb/20fb/live/6ac85220-c95d-11f0-b163-d7d455ce68d3.jpg",
+                        "availableSizes": [
+                            {
+                                "width": 240,
+                                "height": 135
+                            },
+                            {
+                                "width": 320,
+                                "height": 180
+                            },
+                            {
+                                "width": 480,
+                                "height": 270
+                            },
+                            {
+                                "width": 624,
+                                "height": 351
+                            },
+                            {
+                                "width": 800,
+                                "height": 450
+                            },
+                            {
+                                "width": 960,
+                                "height": 540
+                            }
+                        ],
+                        "caption": "The Liverpudlian actor says the course of his career changed when he got noticed online",
+                        "copyright": "BBC/Hera/Enda Bowe",
+                        "originalUrl": "https://c.files.bbci.co.uk/20fb/live/6ac85220-c95d-11f0-b163-d7d455ce68d3.jpg",
+                        "originalSize": {
+                            "width": 2385,
+                            "height": 1342
+                        },
+                        "locator": "20fb/live/6ac85220-c95d-11f0-b163-d7d455ce68d3.jpg",
+                        "originCode": "cpsprodpb"
+                    }
+                ],
+                "isLive": false,
+                "isOppm": false,
+                "attributions": [
+                    {
+                        "title": "Newsbeat",
+                        "link": {
+                            "url": "https://www.bbc.co.uk/news/newsbeat",
+                            "scheme": "https",
+                            "host": "www.bbc.co.uk",
+                            "path": "/news/newsbeat"
+                        }
+                    }
+                ],
+                "commentsCount": null,
+                "reactionCounts": {},
+                "language": "en-gb",
+                "flags": {
+                    "isBreakingNews": false,
+                    "isConsumableInPlace": false,
+                    "isConsumableAsSFV": false,
+                    "isConsumableOnRedButton": false,
+                    "isSuitableForSyndication": true
+                },
+                "contributors": [
+                    {
+                        "name": "Naomi Clarke",
+                        "title": "BBC Newsbeat"
+                    }
+                ],
+                "relatedLinks": [],
+                "context": {},
+                "stats": {
+                    "readTime": 5,
+                    "wordCount": 1137
+                }
+            }
+        ],
+        "page": {
+            "index": 1,
+            "total": 42,
+            "totalItems": 1000
+        }
+    },
+    "contentType": "application/json; charset=utf-8"
+}

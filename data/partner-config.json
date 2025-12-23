@@ -1,0 +1,18 @@
+{
+    "partners": [
+        {
+            "partner_a": {
+                "api_key": "partner_a_api_key",
+                "syndication_options": {
+                    "template_id": "topic-summaries-rss"
+                }
+            },
+            "partner_b": {
+                "api_key": "partner_b_api_key",
+                "syndication_options": {
+                    "template_id": "topic-summaries-jsonfeed"
+                }
+            }
+        }
+    ]
+}

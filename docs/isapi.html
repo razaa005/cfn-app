@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta CONTENT="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/index-page-documentation.css">
+    <title>Information-Syndication-API</title>
+</head>
+<body LANG="en-GB" DIR="Ltr">
+<div class="header">
+    <img class="teamLogo" src="/images/chameleon.png" alt="team-logo"/>
+    <h1>Information Syndication API</h1>
+</div>
+<div class="content">
+    <h1>Introduction</h1>
+    <p>Welcome to the BBC's Information Syndication API, this allows authorised users to be able
+        to take specific content from the BBC for syndication onto their websites or proprietary platforms.</p>
+
+    <p>If you are attempting to access this API then you should have a relationship with the BBC,
+        BBC World Service or BBC Global News Ltd. If you have any questions that are not covered by this
+        documentation then please contact your Account Manager who will be happy to help.</p>
+
+    <br><hr>
+    <h2 id="apikeys">API Keys</h2>
+
+    <p>An API Key is a long string of characters that must be included in the Query String
+        parameters of your request to the API. Without a valid API key you will not be granted access to the content.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+        <pre><a href="https://information-syndication.api.bbc.com/articles?api_key=XXXXX&amp;feed=news-england">https://information-syndication.api.bbc.com/articles?api_key=XXXXX&amp;feed=news-england</a></pre>
+    </figure>
+
+    <br>
+    <h2>Requesting an API Key</h2>
+
+    <p>An API Key should have been provided to you by your Account Manager when they setup your contract for syndication.
+        Please contact them if this is not the case.</p>
+
+    <p>Once you have this key you must keep it secure to prevent other people from gaining access
+        to our API by using it. Do not make calls using this key directly from the client-side of your website.</p>
+
+    <br><hr>
+    <h2>Request Structure</h2>
+
+    <p><b>URL:</b> <a href="https://information-syndication.api.bbc.com/articles">https://information-syndication.api.bbc.com/articles</a>
+    </p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                <p>Parameter Name</p>
+            </th>
+            <th>
+                <p>Type</p>
+            </th>
+            <th>
+                <p>Description</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>api_key</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>The security key required for access (see <a href="#apikeys">API Keys</a>
+                    section).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>feed</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>The name of the BBC feed you wish to syndicate
+                    (see <a href="#feed">What is a Feed?</a>)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Accept</p>
+            </td>
+            <td>
+                <p>HTTP Header</p>
+            </td>
+            <td>
+                <p>Pass &ldquo;application/rss+xml&rdquo; to receive the RSS 2.0 formatted response.
+                    If you require another format for your integration, then this will be given in your instructions. Defaults to RSS 2.0 if not provided.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>accept_override</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>Pass &ldquo;rss2&rdquo; to receive the RSS 2.0 formatted response. This should only be used when you cannot set the Accept header.
+                    If you require another format for your integration then this will be given in your instructions. Defaults to Accept header value if not provided.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>mixins</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>This allows a comma separated list of values which will add certain things into the feed. For example, &ldquo;summary&rdquo; will mean that you get the description of the article.
+                    By default only the headline, last publish Date, URL & GUID are included in the feed. Please see table below for different values and what they do.
+                </p>
+                <p>Note, you can also pass each of them as an individual &ldquo;mixin&rdquo; query string parameter rather than a comma separated list if you prefer.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>number_of_items</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>The maximum number of items to return in the feed from 1 &mdash; 25.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>sort</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>Controls the sort order of the returned feed.</p>
+                <p> &ldquo;date_asc&rdquo;: sorts by last publish date of the article, ascending</p>
+                <p> &ldquo;date_desc&rdquo;: sorts by last publish date of the article, descending</p>
+                <p>Defaults to no sort being applied.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>clip_format</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>If the &ldquo;clips&rdquo; mixin is passed, this determines what format of clip to use:</p>
+                <p> &ldquo;link&rdquo;: results in the URL to an MP3 or MP4 file that you can download to serve to users or include directly in the user's browser</p>
+                <p> &ldquo;embedded_player&rdquo;: includes an &lt;iframe&gt; to the BBC's embeddable media player where video or audio clips appear in articles.</p>
+                <p>Defaults to &ldquo;link&rdquo;.</p>
+                <p>For further information see here: <a href="#articlebodyvideoclips">for Text Article feeds</a> or <a href="#videoaudiostories">for Audio/Video only feeds</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>thumbnail_image_format</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p><strong>Legacy support only: This should only be used if you cannot parse the standard thumbnail image format.</strong></p>
+                <p>Controls the output format for thumbnail images.</p>
+                <p>&ldquo;image_only&rdquo;: changes the <a href="#imageonlythumbnailimageformat">thumbnail image format</a> to provide only the image url, width and height. If this is used then only BBC-owned thumbnail images without copyright information, title, or description will be provided. The default BBC site logo will be used to replace all non-BBC owned thumbnail images.</p>
+                <p>Exclude this query parameter to receive the <a href="#standardthumbnailimageformat">standard thumbnail images format</a>.</p>
+                <p>To see examples of the thumbnail image output see <a href="#thumbnailimageformat">here</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>social_format</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>Determines how social media content (e.g. YouTube, Twitter, Instagram, etc...) appears within articles:</p>
+                <p> &ldquo;link&rdquo;: means that a link to the social media content appears as an anchor tag. (e.g. &lt;a href&gt;)</p>
+                <p> &ldquo;embedded&rdquo;: means that the HTML of the content is delivered from the social media service as per their documentation</p>
+                <p>Defaults to &ldquo;link&rdquo;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>twitter_format</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p><strong>Deprecated: Please use &ldquo;social_format&rdquo; instead.</strong></p>
+                <p>Determines how tweets appear within articles:</p>
+                <p> &ldquo;link&rdquo;: means that a link to the tweet appears as an anchor tag. (e.g. &lt;a href&gt;)</p>
+                <p> &ldquo;embedded&rdquo;: means that the HTML of the tweet is delivered from Twitter inside a &lt;blockquote&gt; as per their documentation</p>
+                <p>Defaults to &ldquo;link&rdquo;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>youtube_format</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p><strong>Deprecated: Please use &ldquo;social_format&rdquo; instead.</strong></p>
+                <p>Determines how YouTube videos appear within articles:</p>
+                <p> &ldquo;link&rdquo;: means that a link to the video appears as an anchor tag. (e.g. &lt;a href&gt;)</p>
+                <p> &ldquo;embedded&rdquo;: means that the YouTube embedded player &lt;iframe&gt; is inserted</p>
+                <p>Defaults to &ldquo;link&rdquo;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>instagram_format</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p><strong>Deprecated: Please use &ldquo;social_format&rdquo; instead.</strong></p>
+                <p>Determines how Instagram photos appear within articles:</p>
+                <p> &ldquo;link&rdquo;: means that a link to the post appears as an anchor tag. (e.g. &lt;a href&gt;)</p>
+                <p> &ldquo;embedded&rdquo;: means that the HTML of the post  is delivered from Instagram inside a &lt;blockquote&gt; as per their documentation</p>
+                <p>Defaults to &ldquo;link&rdquo;.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>page_view_tracking</p>
+            </td>
+            <td>
+                <p>Query String</p>
+            </td>
+            <td>
+                <p>Selects the format of the page view tracking to be inserted into article body content, either &ldquo;image&rdquo; or &ldquo;javascript&rdquo;. Defaults to &ldquo;image&rdquo; if not passed, requires that page view tracking be enabled for you.</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="bd-example">
+        <b>Example request:</b>
+    </div>
+    <figure class="highlight">
+        <pre><a href="https://information-syndication.api.bbc.com/articles?api_key=XXXXX&feed=news-england&mixins=summary,thumbnail_images,body,body_images&page_view_tracking=javascript&sort=date_desc&accept_override=rss2">https://information-syndication.api.bbc.com/articles?api_key=XXXXX&feed=news-england&mixins=summary,thumbnail_images,body,body_images&page_view_tracking=javascript&sort=date_desc&accept_override=rss2</a></pre>
+    </figure>
+
+    <br><hr>
+    <h2>Mixin Values</h2>
+
+    <p>These are values to be passed into the &ldquo;mixins&rdquo; query string parameter. See the example RSS 2.0 response below to how all of these elements appear in the final feed.</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                <p>Value Name</p>
+            </th>
+            <th>
+                <p>Description</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>summary</p>
+            </td>
+            <td>
+                <p>Returns the summary description of each article in the feed in &lt;description&gt; node (RSS 2.0).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>thumbnail_images</p>
+            </td>
+            <td>
+                <p>Returns the images used to link to the article from index pages in &lt;media:thumbnail&gt; nodes contained within &lt;media:content&gt; nodes (RSS 2.0).
+                    The <code>&lt;media:content&gt;</code> tags also contain copyright and alt text information.</p>
+                <p>Note that there may be more than one thumbnail image per article, we have no preference over which you use in this case, although highest resolution might be a good guide.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>body</p>
+            </td>
+            <td>
+                <p>Returns the text contents of each article in the feed in &lt;content:encoded&gt; node (RSS 2.0).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>body_images</p>
+            </td>
+            <td>
+                <p>Includes any images used in the main body of the article, requires &ldquo;body&rdquo; mixin.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>attached_body_images</p>
+            </td>
+            <td>
+                <p>Attach any images from within the body of the article as &lt;enclosure&gt; tags (RSS 2.0).</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>clips</p>
+            </td>
+            <td>
+                <p>Includes any BBC hosted video or audio clips in the feed, see below sections on &ldquo;Understanding the RSS 2.0 Response&rdquo; for more detail on how this works.</p>
+                <p>This mixin requires &ldquo;body&rdquo; mixin to be present for text article feeds. But for media type (video and audio only) feeds &ldquo;body&rdquo; mixin is not required.</p>
+                <p>Media type feeds will contain "audio" or "video" in feed name. Any other feed should be considered as text article feed.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>visual_journalism</p>
+            </td>
+            <td>
+                <p>Includes interactive elements in the body of articles (e.g. quizzes, expandable explainers). These appear as &lt;iframe&gt; tags within the HTML of the body content. Requires &ldquo;body&rdquo; mixin.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>site_logo</p>
+            </td>
+            <td>
+                <p>Includes a logo for the BBC site the feed is coming from in the &lt;channel&gt; section, if available.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>worldwide_verticals</p>
+            </td>
+            <td>
+                <p><strong>Deprecated: Please do not use.</strong></p>
+                <p>Includes articles that originally appeared on our &lsquo;premium content&rsquo; websites, including BBC Future, BBC Earth, BBC Capital, BBC Culture and BBC Travel. Only to be used if your syndication deal includes this content, please ask your BBC Account Manager if you are not sure.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>body_adverts</p>
+            </td>
+            <td>
+                <p>Includes advertisements within the body of an article, only supported on Apple News Format.</p>
+            </td>
+        </tr>
+    </table>
+
+    <br><hr>
+    <h2>Understanding the RSS 2.0 Response</h2>
+
+    <p>The Information Syndication API provides content as RSS 2.0 feeds. These are generated based on the top 10
+        articles currently present on the relevant BBC feed when you make the request for a feed.</p>
+
+    <br>
+    <h3>Article Body</h3>
+
+    <p>We include the main body of an article as a CDATA section within a <code>&lt;content:encoded&gt;</code>
+        tag (using the RSS Content Module
+        <a href="http://purl.org/rss/1.0/modules/content/">http://purl.org/rss/1.0/modules/content/</a>).</p>
+
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;content:encoded&gt;
+    &lt;![CDATA[&lt;p&gt;Paragraph text&lt;/p&gt;]]&gt;
+&lt;/content:encoded&gt;</code></pre>
+    </figure>
+
+    <p>The <code>&lt;description&gt;</code> field of each item is used to store the summary of the article.</p>
+
+    <br>
+    <h3>Article Body Images</h3>
+
+    <p>Within the body of the
+        article we include any images inside the HTML5 <code>&lt;figure&gt;</code> tags.
+        The child <code>&lt;img&gt;</code> tag of the <code>&lt;figure&gt;</code> references the image
+        itself, while the <code>&lt;figcaption&gt;</code> child tag contains the caption
+        to go along with the image and the <code>&lt;footer&gt;</code> child tag gives the
+        name of the copyright owner.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+       <pre><code>&lt;figure&gt;
+    &lt;img alt="Description of Image" src="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="171" width="304"&gt;&lt;/img&gt;
+    &lt;figcaption&gt;Caption accompanying Image&lt;/figcaption&gt;
+    &lt;footer&gt;Copyright Holder&lt;/footer&gt;
+&lt;/figure&gt;</code></pre>
+    </figure>
+
+    <br>
+    <h3 id="thumbnailimageformat">Article Thumbnail Images</h3>
+
+    <p>An article may have one or more thumbnail images associated with it. These are included as
+        <code>&lt;media:thumbnail&gt;</code> tags inside <code>&lt;media:content&gt;</code> tags within each <code>&lt;item&gt;</code> in the feed.
+        The <code>&lt;media:content&gt;</code> tags also contain copyright and alt text information.</p>
+
+    <p><strong>Standard Thumbnail Images</strong></p>
+    <p>This is the default format which is provided by excluding the &ldquo;thumbnail_image_format&rdquo; query parameter:</p>
+    <div class="bd-example" id="standardthumbnailimageformat">
+        <strong>Example</strong>
+    </div>
+    <figure class="highlight">
+        <pre><code>
+&lt;media:content url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976" medium="image"&gt;
+    &lt;media:title&gt;Caption for image file1&lt;/media:title&gt;
+    &lt;media:description&gt;Alt text for file1.&lt;/media:description&gt;
+    &lt;media:copyright&gt;The British Broadcasting Corporation&lt;/media:copyright&gt;
+    &lt;media:thumbnail url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976"/&gt;
+&lt;/media:content&gt;
+        </code></pre>
+    </figure>
+
+    <p>It is strongly suggested that partners use the standard thumbnail image format so that additional information can
+        be included with the thumbnail image. This includes the copyright information, description (alt-text), and title.</p>
+    <br>
+    <p><strong>Image Only Thumbnails</strong></p>
+    <p>However, if your system is unable to parse the standard thumbnail image format you can use the query string parameter &ldquo;thumbnail_image_format=image_only&rdquo;</p>
+    <p>This will remove the title, description, and copyright information from the thumbnail.</p>
+    <p>The thumbnail image responses will be modified to look like the following example:</p>
+    <div class="bd-example" id="imageonlythumbnailimageformat">
+        <strong>Example</strong>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;media:thumbnail url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976"/&gt;</code></pre>
+    </figure>
+
+    <p>Note that, without copyright information, we can only provide thumbnail images for which the BBC is the copyright holder.
+    This means that images without BBC copyright will be replaced with the default BBC site logo when using this option.</p>
+
+    <br>
+    <h3 id="articlebodyvideoclips">Article Body Video Clips</h3>
+
+    <p>Articles will occasionally contain video clips, these are optional and included by using the &ldquo;clips&rdquo; mixin parameter.
+        Our journalists always make sure that the text is always readable without the clips included, so you'd never get something like
+        &ldquo;as you can see in the below video&rdquo; that wouldn't make sense if you weren't syndicating the clip.</p>
+
+    <p>There are two ways to include video on your site, either by taking the URL to the MP4 file and playing that in your player software, or embedding the BBC player as an iframe.</p>
+
+    <p>We prefer you not to ingest the video clip into your own system as we prefer all playouts to come directly to us - this allows us editorial control and means we're better
+        able to manage taking down clips if there is ever a legal reason to do so.</p>
+
+    <p>You can control which you get by using the &ldquo;clip_format&rdquo; query string parameter:</p>
+    <ul>
+        <li>&ldquo;clip_format=link&rdquo; (default) will give you the link to the MP4 file</li>
+        <li>&ldquo;clip_format=embedded_player&rdquo; will give you the iframe to the BBC player</li>
+    </ul>
+
+    <b>LINK:</b>
+
+    <p>Within the body of the article we include any video clips inside the HTML5 <code>&lt;figure&gt;</code> tags. The child <code>&lt;video&gt;</code> tag of
+        the <code>&lt;figure&gt;</code> references the clip itself, while the <code>&lt;figcaption&gt;</code> child tag contains the caption to go along with
+        the clip and the <code>&lt;footer&gt;</code> child tag gives the name of the copyright owner. Other metadata about the clip is
+        included as attributes on the <code>&lt;video&gt;</code> tag, including an <code>id</code> attribute which will let you uniquely identify
+        that clip in the future, even if the URL has changed (this could happen if we have created a new version
+        of the clip). The <code>poster</code> attribute contains the URL of the still image to show before the video is played.
+        The <code>controls</code> attribute adds video controls, like play, pause, and volume.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;figure&gt;
+    &lt;video controls="controls" id="p04z1jnb" data-duration="56" data-title="Name of Clip" poster="https://...file.jpg"&gt;
+        &lt;source src="https://...file.mp4" type="video/mp4"/&gt;
+    &lt;/video&gt;
+    &lt;figcaption&gt;Caption describing video clip&lt;/figcaption&gt;
+    &lt;footer&gt;The British Broadcasting Corporation&lt;/footer&gt;
+&lt;/figure&gt;</code></pre>
+    </figure>
+
+    <b>EMBEDDED PLAYER:</b>
+
+    <p>Within the body of the article we include any video clips inside the HTML5 <code>&lt;figure&gt;</code> tags. The <code>&lt;figure&gt;</code>
+        tag contains two children - the <code>&lt;iframe&gt;</code> which points to the BBC player and a <code>&lt;figcaption&gt;</code>
+        contains the caption to go along with the clip.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;figure&gt;
+    &lt;iframe frameborder="0" height="210" width="320" src="http://www.bbc.co.uk/news/av/embed/p6786786/766756"&gt;&lt;/iframe&gt;
+    &lt;figcaption>Caption describing video clip&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </code></pre>
+    </figure>
+
+    <b>VIDEO ORIENTATION</b>
+
+    <p>We support both landscape and portrait orientation. ISAPI selects the orientation preferred by editorial.</p>
+
+    <div class="bd-example">
+        <b>Example of landscape video in article body</b>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;figure&gt;
+    &lt;video controls="controls" poster="https://ichef.bbci.co.uk/images/ic/1920x1080/p12342.jpg" id="p1234q" data-duration="152" data-title="Title of landscape video"&gt;
+        &lt;source src="https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/proto/https/mediaset/ws-clip-syndication-high/vpid/p1234q.mp4" type="video/mp4"/&gt;
+    &lt;/video&gt;
+    &lt;figcaption&gt;Caption describing video clip&lt;/figcaption&gt;
+    &lt;footer&gt;The British Broadcasting Corporation&lt;/footer&gt;
+&lt;/figure&gt;</code></pre>
+    </figure>
+
+    <div class="bd-example">
+        <b>Example of portrait video in article body</b>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;figure&gt;
+    &lt;video controls="controls" poster="https://ichef.bbci.co.uk/images/ic/544xn/p1234.jpg" id="p1234x" data-duration="65" data-title="Title of portrait video"&gt;
+        &lt;source src="https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/proto/https/mediaset/ws-clip-syndication-high/vpid/p1234x.mp4" type="video/mp4"/&gt;
+    &lt;/video&gt;
+    &lt;figcaption&gt;Caption describing video clip&lt;/figcaption&gt;
+    &lt;footer&gt;The British Broadcasting Corporation&lt;/footer&gt;
+&lt;/figure&gt;</code></pre>
+    </figure>
+
+    <br>
+    <h3>Article Body Audio Clips</h3>
+
+    <p>Articles will occasionally contain audio clips, these are optional and included by using the &ldquo;clips&rdquo; mixin parameter.</p>
+
+    <p>There are two ways to include audio on your site, either by taking the URL to the MP3 file and playing that in your player software, or embedding the BBC player as an iframe.</p>
+
+    <p>We prefer you not to ingest the audio clip into your own system as we prefer all playouts to come directly to us - this allows us editorial control and means we're better
+        able to manage taking down clips if there is ever a legal reason to do so.</p>
+
+    <p>You can control which you get by using the &ldquo;clip_format&rdquo; query string parameter:</p>
+    <ul>
+        <li>&ldquo;clip_format=link&rdquo; (default) will give you the link to the MP3 file</li>
+        <li>&ldquo;clip_format=embedded_player&rdquo; will give you the iframe to the BBC player</li>
+    </ul>
+
+    <b>LINK:</b>
+
+    <p>Within the body of the article we include any audio clips inside the HTML5 <code>&lt;figure&gt;</code> tags. The child
+        <code>&lt;audio&gt;</code> tag of the <code>&lt;figure&gt;</code> references the clip itself, while the <code>&lt;figcaption&gt;</code> child tag
+        contains the caption to go along with the clip and the <code>&lt;footer&gt;</code> child tag gives the name of the copyright
+        owner. Other metadata about the clip is included as attributes on the <code>&lt;audio&gt;</code> tag, including an <code>id</code>
+        attribute which will let you uniquely identify that clip in the future, even if the URL has changed
+        (this could happen if we have created a new version of the clip). As the <code>&lt;audio&gt;</code> tag specification does
+        not include a <code>poster</code> attribute we have added <code>data-poster</code> containing the still image to show with the clip.
+        The <code>controls</code> attribute adds audio controls, like play, pause, and volume.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+       <pre><code>&lt;figure&gt;
+    &lt;audio controls="controls" id="p04z1jnc" data-duration="56" data-title="Name of Clip" data-poster="https://...file.jpg"&gt;
+        &lt;source src="https://...file.mp3" type="audio/mpeg"/&gt;
+    &lt;/audio&gt;
+    &lt;figcaption&gt;Caption describing audio clip&lt;/figcaption&gt;
+    &lt;footer&gt;The British Broadcasting Corporation&lt;/footer&gt;
+&lt;/figure&gt;</code></pre>
+    </figure>
+
+    <b>EMBEDDED PLAYER:</b>
+
+    <p>Within the body of the article we include any audio clips inside the HTML5 <code>&lt;figure&gt;</code> tags. The <code>&lt;figure&gt;</code>
+        tag contains two children - the <code>&lt;iframe&gt;</code> which points to the BBC player and a <code>&lt;figcaption&gt;</code>
+        contains the caption to go along with the clip.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+        <pre><code>&lt;figure&gt;
+    &lt;iframe frameborder="0" height="210" width="320" src="http://www.bbc.co.uk/news/av/embed/p6786786/766756"&gt;&lt;/iframe&gt;
+    &lt;figcaption>Caption describing audio clip&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </code></pre>
+    </figure>
+
+    <br>
+    <h3>Picture Gallery Images</h3>
+
+    <p>Some feeds have picture gallery articles, which contain a series of images.
+        These are marked up with Media RSS <code>&lt;media:content&gt;</code> tags within each <code>&lt;item&gt;</code> in the feed.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+       <pre><code>&lt;media:content url="...some-main-image.jpg" height="500" width="800"&gt;
+    &lt;media:title&gt;A long title for the image&lt;/media:title&gt;
+    &lt;media:description&gt;Alternative description of the image&lt;/media:description&gt;
+    &lt;media:thumbnail url="../small-version-of-main-image.jpg" height="81" width="144"/&gt;
+&lt;/media:content&gt;</code></pre>
+    </figure>
+
+    <br>
+    <h3 id="videoaudiostories">Media Articles</h3>
+
+    <p>Some feeds contain items which are primarily an audio or video clip with an optional accompaniment of text. We
+        represent these as <code>&lt;media:content&gt;</code> items within the <code>&lt;item&gt;</code>.
+        There is still a <code>&lt;content:encoded&gt;</code> node for the body text that accompanies the clip.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+       <pre><code>&lt;media:content url="https://...file.mp4" id="p04z1jnb" duration="56"
+        type="video/mp4" medium="video" expression="full"&gt;
+    &lt;media:copyright&gt;The British Broadcasting Corporation&lt;/media:copyright&gt;
+    &lt;media:title&gt;Name of Clip&lt;/media:title&gt;
+    &lt;media:description&gt;Caption describing clip&lt;/media:description&gt;
+    &lt;media:thumbnail url="https://...file.jpg" height="1080" width="1920"/&gt;
+&lt;/media:content&gt;</code></pre>
+    </figure>
+
+    <p>If you pass the query string parameter &ldquo;clip_format=embedded_player&rdquo; then instead of getting a <code>&lt;media:content&gt;</code>
+        node you'll see the <code>&lt;iframe&gt;</code> to the BBC player at the top of the <code>&lt;content:encoded&gt;</code> node.
+        See &ldquo;Article Body Video Clips&rdquo; for more information about this parameter.</p>
+
+    <br>
+    <h3>Social Embeds</h3>
+
+    <p>BBC journalists will occasionally embed social media posts in their articles (e.g. YouTube, Twitter, Instagram, etc...).</p>
+
+    <div class="bd-example">
+        <b>Example:</b> <a href="http://www.bbc.co.uk/news/world-asia-india-43482472">http://www.bbc.co.uk/news/world-asia-india-43482472</a>
+    </div>
+    <figure class="highlight">
+        <img src="/images/social_embed_example.png" style="width: 100%" alt="An example of a tweet embedded in an article"/>
+        <figcaption>An example of a tweet embedded in an article.</figcaption>
+    </figure>
+
+    <p>We always make sure to write the articles so that they work either with or without the embedded social media post being seen.</p>
+
+    <p>In our syndication feeds we represent these posts as links back to the original, with the link text being the URL. So the above is shown in our feed as this:</p>
+
+    <figure class="highlight">
+       <pre><code>&lt;p&gt;
+  Some fans even said that &lt;a href="https://www.youtube.com/watch?v=q2gICJFG6uw"&gt;the remake objectified women&lt;/a&gt;
+  unlike the &quot;quirky&quot; original.
+&lt;/p&gt;
+
+&lt;p&gt;
+   &lt;a href="https://twitter.com/theClaiire/status/975784198324748293"&gt;
+        https://twitter.com/theClaiire/status/975784198324748293
+   &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Ek Do Teen translates from the Hindi into &quot;one, two, three&quot; and the song lyrics
+    describe a woman counting down the seconds as she waits to see her lover.
+&lt;/p&gt;
+    </code></pre>
+    </figure>
+
+    <p> This make sure users are able to visit the referenced post directly,
+        and also enables you as a partner to run your own social media embed presentation logic over them,
+        if you wish, or simply remove them.</p>
+
+    <p>If you use the parameter "social_format=embedded" then we will pull the social embed code into the feed directly
+        instead of including the URL. This is applicable to all supported social media formats.</p>
+
+    <figure class="highlight">
+        <img src="/images/instagram_embed_example.png" style="width: 100%" alt="An example of an Instagram post embedded in an article"/>
+        <figcaption>An example of an Instagram post embedded in an article.</figcaption>
+    </figure>
+
+    <br>
+    <h3>Tables</h3>
+
+    <p>Some feeds display content in tables.</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+        <table class="table table-bordered" style="background-color: white">
+            <tr>
+                <th>Table Column Header 1</th>
+                <th>Table Column Header 2</th>
+            </tr>
+            <tr>
+                <td>Table 1st Row Column 1 Value</td>
+                <td>Table 1st Row Column 2 Value</td>
+            </tr>
+            <tr>
+                <td>Table 2nd Row Column 1 Value</td>
+                <td>Table 2nd Row Column 2 Value</td>
+            </tr>
+        </table>
+    </figure>
+
+    <p> We represent these with regular HTML tables using the <code>&lt;table&gt;</code> tag</p>
+
+    <div class="bd-example">
+        <b>Example</b>
+    </div>
+    <figure class="highlight">
+       <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+      Table Column Header 1
+    &lt;/th&gt;
+    &lt;th&gt;
+      Table Column Header 2
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      Table 1st Row Column 1 Value
+    &lt;/td&gt;
+    &lt;td&gt;
+      Table 1st Row Column 2 Value
+    &lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt;
+      Table 2nd Row Column 1 Value
+    &lt;/td&gt;
+    &lt;td&gt;
+      Table 2nd Row Column 2 Value
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    </figure>
+
+
+    <br><hr>
+    <h2>Example RSS 2.0 Response</h2>
+
+    <figure class="highlight">
+    <pre><code>&lt;rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"
+                   xmlns:content="http://purl.org/rss/1.0/modules/content/"&gt;
+    &lt;channel&gt;
+        &lt;title&gt;BBC News Home&lt;/title&gt;
+        &lt;description&gt;BBC Information Syndication RSS Feed&lt;/description&gt;
+        &lt;link&gt;https://www.bbc.com/news/front_page?xtor=AL-72-[partner]-[insyn]-[link]-[mundo]-[bizdev]-[isapi]&lt;/link&gt;
+        &lt;pubDate&gt;Wed, 28 Oct 2015 15:01:05 GMT&lt;/pubDate&gt; &lt;!-- Date feed requested --&gt;
+
+        &lt;langauge&gt;en-gb&lt;/langauge&gt;
+        &lt;item&gt;
+            &lt;title&gt;The Headline for Story including &amp;quot;Quoted text&amp;quot;&lt;/title&gt;
+
+            &lt;!-- URL to article on BBC website--&gt;
+            &lt;link&gt;https://www.bbc.com/news/uk-england-34911943?xtor=AL-72-[partner]-[insyn]-[link]-[mundo]-[bizdev]-[isapi]&lt;/link&gt;
+            &lt;guid&gt;https://www.bbc.com/news/uk-england-34911943&lt;/guid&gt;
+            &lt;author&gt;Bob Doolittle - BBC Newsnight&lt;/author&gt;
+
+            &lt;description&gt;Short summary of the article.&lt;/description&gt;
+            &lt;pubDate&gt;Wed, 28 Oct 2015 12:07:17 GMT&lt;/pubDate&gt; &lt;!-- Date last published --&gt;
+
+            &lt;!-- Thumbnail(s) for Article: --&gt;
+            &lt;media:content url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976" medium="image"&gt;
+                &lt;media:title&gt;Title of image file1&lt;/media:title&gt;
+                &lt;media:description&gt;Description of image file1.&lt;/media:description&gt;
+                &lt;media:copyright&gt;BBC&lt;/media:copyright&gt;
+                &lt;media:thumbnail url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976"/&gt;
+            &lt;/media:content&gt;
+
+    &lt;!-- Body text of Article: --&gt;
+            &lt;content:encoded&gt;
+                &lt;![CDATA[&lt;p&gt;Paragraph text&lt;/p&gt;
+                &lt;p&gt;More paragraph text &lt;strong&gt;this bit has &amp;quot;strong&amp;quot; emphasiss&lt;/strong&gt;&lt;/p&gt;
+                &lt;h3&gt;Subheading within Article&lt;/h3&gt;
+                &lt;figure&gt;
+                    &lt;img alt="Description of Image" src="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="171" width="304"&gt;&lt;/img&gt;
+                    &lt;figcaption&gt;Caption accompanying Image&lt;/figcaption&gt;
+                    &lt;footer&gt;Copyright Holder&lt;/footer&gt;
+                &lt;/figure&gt;
+                &lt;p&gt;
+                    &lt;a href="https://www.bbc.com/?xtor=AL-72-[partner]-[insyn]-[link]-[mundo]-[bizdev]-[isapi]"&gt;
+                        A link with tracking information to somewhere.
+                    &lt;/a&gt;
+                &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;List Item 1&lt;/li&gt;
+                    &lt;li&gt;List Item 2&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;img src="https://a1.api.bbc.co.uk/hit.xiti/?s=598314&amp;p=news.uk.story.123123.page&amp;x4=[en-gb]&amp;x5=[https://www.bbc.com/news/front_page/123123]&amp;x7=[article]&amp;x8=[synd_nojs_ISAPI]&amp;x9=[The Headline for Story including &quot;Quoted text&quot;]&amp;x11=[2015-09-07T14:35:00Z]&amp;x12=[2015-10-08T11:38:10Z]&amp;x19=[partner-tracking-code]" /&gt;
+                ]]&gt;
+            &lt;/content:encoded&gt;
+        &lt;/item&gt;
+        &lt;item&gt;
+            &lt;title&gt;A Photo Gallery Story&lt;/title&gt;
+            &lt;link&gt;https://www.bbc.co.uk/news/in-pictures-...&lt;/link&gt; &lt;!-- URL to article on BBC website--&gt;
+            &lt;guid&gt;https://www.bbc.co.uk/news/in-pictures-...&lt;/guid&gt; &lt;!-- URL to article on BBC website--&gt;
+            &lt;description&gt;Short summary of the photo gallery.&lt;/description&gt;
+            &lt;pubDate&gt;Wed, 28 Oct 2015 12:07:17 GMT&lt;/pubDate&gt; &lt;!-- Date last published --&gt;
+            &lt;!-- Thumbnail(s) for Article: --&gt;
+            &lt;media:content url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976" medium="image"&gt;
+                &lt;media:title&gt;Title of image file1&lt;/media:title&gt;
+                &lt;media:description&gt;Description of image file1.&lt;/media:description&gt;
+                &lt;media:copyright&gt;BBC&lt;/media:copyright&gt;
+                &lt;media:thumbnail url="https://some.subdomain.bbci.co.uk/path/to/file1.jpg" height="549" width="976"/&gt;
+            &lt;/media:content&gt;
+            &lt;!-- The images for the Photo Gallery: --&gt;
+            &lt;!-- A photogallery image --&gt;
+            &lt;media:content url="https://...photo.jpg" height="549" width="976" type="image/jpeg"&gt;
+                &lt;!-- The caption of the image --&gt;
+                &lt;media:title&gt;Some text to be presented to the user along side the image.&lt;/media:title&gt;
+                &lt;media:description&gt;An image&lt;/media:description&gt; &lt;!-- The alt text of the image --&gt;
+                &lt;!-- The copyright holder of the image --&gt;
+                &lt;media:copyright&gt;BBC&lt;/media:copyright&gt;
+                &lt;!-- A photogallery image's thumbnail --&gt;
+                &lt;media:thumbnail url="https://...smaller_photo.jpg" height="81" width="144" /&gt;
+            &lt;/media:content&gt;
+
+            &lt;!-- A photogallery image --&gt;
+            &lt;media:content url="https://...photo.jpg" height="549" width="976" type="image/jpeg"&gt;
+                &lt;!-- The caption of the image --&gt;
+                &lt;media:title&gt;Some text to be presented to the user along side the image.&lt;/media:title&gt;
+                &lt;media:description&gt;An image&lt;/media:description&gt; &lt;!-- The alt text of the image --&gt;
+                &lt;!-- The copyright holder of the image --&gt;
+                &lt;media:copyright&gt;BBC&lt;/media:copyright&gt;
+                &lt;!-- A photogallery image's thumbnail --&gt;
+                &lt;media:thumbnail url="https://...smaller_photo.jpg" height="81" width="144" /&gt;
+            &lt;/media:content&gt;
+        &lt;/item&gt;
+        &lt;item&gt;
+            &lt;title&gt;A Video Story&lt;/title&gt;
+            &lt;!-- URL to the video page on BBC website--&gt;
+            &lt;link&gt;https://www.bbc.com/news/england-43378675?xtor=AL-72-[partner]-[insyn]-[link]-[mundo]-[bizdev]-[isapi]&lt;/link&gt;
+            &lt;guid&gt;https://www.bbc.com/news/england-43378675&lt;/guid&gt;
+            &lt;pubDate&gt;Tue, 6 Mar 2018 19:16:08 GMT&lt;/pubDate&gt;
+            &lt;content:encoded&gt;
+                &lt;![CDATA[&lt;p&gt;A short summary of the video contents.&lt;/p&gt;]]&gt;
+            &lt;/content:encoded&gt;
+            &lt;!-- the video --&gt;
+            &lt;media:content url="https: .../vpid/p0818hm0.mp4" type="video/mp4" medium="video"
+                expression="full" duration="60" id="p0818hm0"&gt;
+                &lt;media:copyright&gt;The British Broadcasting Corporation&lt;/media:copyright&gt;
+                &lt;media:title&gt;Video title&lt;/media:title&gt;
+                &lt;media:description&gt;Video description&lt;/media:description&gt;
+                &lt;media:thumbnail url="https://... p0804w41.jpg" width="1920" height="1080"/&gt;
+            &lt;/media:content&gt;
+        &lt;/item&gt;
+    &lt;/channel&gt;
+&lt;/rss&gt;</code></pre>
+    </figure>
+    <hr class="divider">
+
+    <p class="faq">
+        <b>FAQs</b>
+    </p>
+
+    <h4 id="feed">What is a Feed?</h4>
+
+    <p>A feed is the section of the page of the BBC website that you wish to syndicate. When you
+        make a request for articles you need to let us know which feed is required.</p>
+
+    <p>For example if you
+        wanted to syndicate content from the BBC England news site
+        (<A HREF="https://www.bbc.co.uk/news/england/">https://www.bbc.co.uk/news/england/</A>)
+        you would pass the feed value of &ldquo;news-england&rdquo;, or if you were syndicating the Spanish
+        language BBC Mundo's front page (<A HREF="https://www.bbc.com/mundo">https://www.bbc.com/mundo</A>)
+        you would pass &ldquo;mundo-front-page&rdquo;.</p>
+
+    <p>These feeds are not simply lists of the most recent stories, they are editorially curated
+        to make sure that the news is delivered to the reader in the best way possible.</p>
+
+    <br>
+    <h4>Which formats are supported?</h4>
+
+    <p>The Information Syndication API syndicates articles in the RSS 2.0 format (with extensions). Other formats
+        may be added in the future based on demand. To request the document pass the value &ldquo;application/rss+xml&rdquo;
+        into the Accept HTTP header.</p>
+
+    <br>
+    <h4>Why can't I see some images used on the BBC website?</h4>
+
+    <p>The BBC doesn't own the copyright to all images we show on the website so depending on the licensing
+        agreement in place we may not be able to syndicate some images, particularly larger ones.</p>
+
+    <br>
+    <h4>Why are there articles on the BBC website that aren't in the feed?</h4>
+
+    <p>At this time the Information Syndication API currently only syndicates standard news stories.</p>
+
+    <p>Other types of articles, like coverage of live events are not included yet. If they are included in
+        the future they may be an additional cost involved in syndicating that type of content. Please speak to your
+        Account Manager if this type of content is of interest to you.</p>
+
+    <p>It may also be that there is a copyright issue preventing us from syndicating a
+        particular article, in which case they will also be excluded.</p>
+
+    <br>
+    <h4>What is the &lsquo;xtor&rsquo; query parameter? Why does it appear on BBC links?</h4>
+
+    <p>&lsquo;xtor&rsquo; is the name of the query parameter used for referral tracking. It is used to monitor referrals back to BBC content from our partners.</p>
+
+    <br>
+    <h4>Why is there a blank image at the bottom of articles?</h4>
+    <p>This image is used for tracking when an article is visited. It won't be visible in the article but without it article interaction cannot be tracked.</p>
+
+</div>
+</body>
+</html>
