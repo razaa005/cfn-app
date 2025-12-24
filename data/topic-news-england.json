@@ -1,0 +1,121 @@
+{
+    "data": {
+        "urn": "urn:bbc:tipo:topic:ck71r1x591xt",
+        "title": "England",
+        "description": "",
+        "edition": null,
+        "uri": "/news/england",
+        "home": "news",
+        "visibility": true,
+        "hasAdvertising": true,
+        "language": "en-gb",
+        "subjectList": [
+            {
+                "subjectId": "http://www.bbc.co.uk/things/9ba4d1e5-7cc7-48c0-9793-ad198403c54c#id",
+                "subjectType": "tag"
+            }
+        ],
+        "curationList": [
+            {
+                "curationId": "urn:bbc:tipo:list:bdf2fe34-b202-4f44-b7ac-4ea1269409c8",
+                "curationType": "tipo-curation",
+                "position": 0,
+                "visualProminence": "HIGH",
+                "intent": "PRIORITY_CONTENT",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:cc7ba115-e0b4-4891-a692-35cb8234cc87",
+                "curationType": "tipo-curation",
+                "position": 1,
+                "visualProminence": "NORMAL",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:7eed7671-10f1-484a-99c0-22a1fdcf5c53",
+                "curationType": "tipo-curation",
+                "position": 2,
+                "visualProminence": "NORMAL",
+                "visualStyle": "NONE"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:3e48878a-65ee-4e97-a9f3-86e0dc6c1c06",
+                "curationType": "tipo-curation",
+                "position": 3,
+                "visualProminence": "NORMAL",
+                "title": "Stories to make you smile",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:d90f5b9d-f180-40f7-9152-372c133f63b8",
+                "curationType": "tipo-curation",
+                "position": 4,
+                "visualProminence": "NORMAL",
+                "title": "Features & Analysis",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:026459b1-04c4-4861-afb7-c5cdf0afda8c",
+                "curationType": "tipo-curation",
+                "position": 5,
+                "visualProminence": "HIGH",
+                "title": "Watch/Listen",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:6ff8080a-3d40-4069-93c3-a2cf62225fcd",
+                "curationType": "tipo-curation",
+                "position": 6,
+                "visualProminence": "NORMAL",
+                "title": "Sport",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:follow:home:http://www.bbc.co.uk/ontologies/passport/home/News",
+                "curationType": "follow",
+                "position": 7,
+                "visualProminence": "NORMAL",
+                "associatedContent": {
+                    "uri": "https://www.bbc.co.uk/news/my"
+                },
+                "additionalText": {
+                    "plainText": "From your followed topics"
+                },
+                "title": "My News",
+                "visualStyle": "COLLECTION"
+            },
+            {
+                "curationId": "urn:bbc:vivo:curation:9ec749c6-7e79-46c8-8077-a703fc313d39",
+                "curationType": "vivo-stream",
+                "position": 8,
+                "visualProminence": "LOW",
+                "title": "Latest Updates",
+                "visualStyle": "FEED"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:d52eb377-869d-4843-ad48-acd2b6642961",
+                "curationType": "tipo-curation",
+                "position": 9,
+                "visualProminence": "NORMAL",
+                "visualStyle": "LINKS"
+            },
+            {
+                "curationId": "urn:bbc:tipo:list:6c762e8d-aa9e-49d0-a35d-376dea6fc82f",
+                "curationType": "tipo-curation",
+                "position": 10,
+                "visualProminence": "NORMAL",
+                "visualStyle": "LINKS"
+            }
+        ],
+        "seoTitle": "England | Latest News & Updates | BBC News",
+        "seoDescription": "Get all the latest news, live updates and content about England from across the BBC.",
+        "metadata": {
+            "analytics": {
+                "name": "news.topics.england.page",
+                "producer": "NEWS_ENGLISH_REGIONS",
+                "irisKeyword": "newsps"
+            }
+        }
+    },
+    "contentType": "application/json; charset=utf-8"
+}
