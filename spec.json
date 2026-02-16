@@ -2,6 +2,10 @@
   "project_name": "syndication-sandbox",
   "component_name": "ahmad-node-lambda-cfn-app",
 
+  "aws_account": "749144762306",
+  "region": "eu-west-1",
+  "environment": "int",
+
   "template": "cfn/app.yml",
 
   "assets": [
