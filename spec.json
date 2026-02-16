@@ -1,0 +1,19 @@
+{
+  "project_name": "syndication-sandbox",
+  "component_name": "ahmad-node-lambda-cfn-app",
+
+  "template": "cfn/app.yml",
+
+  "assets": [
+    {
+      "name": "lambda",
+      "type": "lambda",
+      "path": "lambda.zip",
+      "parameter_name": "LambdaPackage"
+    }
+  ],
+
+  "parameters": {
+    "LambdaPackage": "${asset:lambda}"
+  }
+}

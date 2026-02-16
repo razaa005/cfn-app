@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: ahmad-node-lambda-cfn-app
+
+Parameters:
+  LambdaPackage:
+    Type: String
+    Description: S3 URI to the Lambda deployment package
+
+Resources:
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${AWS::StackName}-lambda-role"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  SyndicationHackWeekFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${AWS::StackName}"
+      Runtime: nodejs20.x
+      Handler: dist/index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Timeout: 30
+      MemorySize: 256
+      Code:
+        # Cosmos provides LambdaPackage as an S3 URI.
+        # This snippet matches the COSMOS Quick Start parsing pattern.
+        S3Bucket: !Select [2, !Split ["/", !Select [1, !Split [":", !Ref LambdaPackage]]]]
+        S3Key: !Join
+          - "/"
+          - - !Select [3, !Split ["/", !Ref LambdaPackage]]
+            - !Select [4, !Split ["/", !Ref LambdaPackage]]
